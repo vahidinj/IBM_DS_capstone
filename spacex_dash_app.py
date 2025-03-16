@@ -59,7 +59,6 @@ app.layout = html.Div(
 )
 
 
-# TASK 2:
 # Add a callback function for `site-dropdown` as input, `success-pie-chart` as output
 @app.callback(Output("success-pie-chart", "figure"), Input("site-dropdown", "value"))
 def update_pie_chart(selected_site):
@@ -80,7 +79,6 @@ def update_pie_chart(selected_site):
     return fig
 
 
-# TASK 4:
 # Add a callback function for `site-dropdown` and `payload-slider` as inputs, `success-payload-scatter-chart` as output
 @app.callback(
     Output("success-payload-scatter-chart", "figure"),
